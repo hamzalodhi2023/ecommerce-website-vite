@@ -16,7 +16,7 @@ function Header({ data }) {
           consequuntur commodi saepe, laboriosam fugit quam suscipit aspernatur
           deserunt sed blanditiis deleniti at fuga eius quae soluta, tempore id
         </p>
-        <NavLink to="/products">
+        <NavLink to="/products" className="w-fit">
           <Button data={"SHOP NOW"} />
         </NavLink>
       </div>

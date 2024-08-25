@@ -11,7 +11,7 @@ function Navbar() {
   return (
     <nav className="flex w-full items-center justify-between overflow-hidden bg-[#e2edfa] px-5 py-5">
       <div className="logo-div">
-        <NavLink to="/">
+        <NavLink to="/" className="after:hidden">
           <img src="./images/logo.png" alt="" className="w-44" />
         </NavLink>
       </div>
@@ -20,7 +20,7 @@ function Navbar() {
         onClick={() => setClose(true)}
       />
       <div
-        className={`${close ? "flex" : "hidden"} absolute left-0 top-0 h-screen w-full bg-white md:static md:flex md:h-full md:w-[80%] md:bg-transparent`}
+        className={`${close ? "flex" : "hidden"} fixed left-0 top-0 h-screen w-full bg-white md:static md:flex md:h-full md:w-[80%] md:bg-transparent`}
       >
         <IoClose
           onClick={() => {
