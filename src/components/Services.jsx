@@ -4,7 +4,7 @@ import { RiSecurePaymentLine } from "react-icons/ri";
 import { GiReceiveMoney } from "react-icons/gi";
 function Services() {
   return (
-    <div className="flex h-auto w-full flex-col items-center justify-center gap-5 px-20 md:min-h-[50dvh] md:flex-row">
+    <div className="mb-6 flex h-auto w-full flex-col items-center justify-center gap-5 px-20 md:min-h-[50dvh] md:flex-row">
       {/* Desktop Started */}
       <div className="hidden h-[40dvh] flex-col items-center justify-center rounded-2xl bg-[#e0efff] px-4 md:flex">
         <TbTruckDelivery className="h-[60px] w-[60px] rounded-full bg-white p-3 text-5xl text-[#6354e9]" />

@@ -4,11 +4,11 @@ import Button from "./layout/ui/Button";
 // eslint-disable-next-line react/prop-types
 function Header({ data }) {
   return (
-    <div className="flex h-[80dvh] w-full items-center justify-center gap-5 px-20">
+    <div className="mb-10 flex h-[80dvh] w-full items-center justify-center gap-5 px-20">
       <div className="text-div flex w-full flex-col justify-evenly gap-4 text-justify md:w-1/2 md:items-start">
         <div>
           <p className="text-xl text-[#5471c7]">WELCOME TO</p>
-          <h1 className="text-6xl font-bold">{data}</h1>
+          <h1 className="text-5xl font-bold">{data}</h1>
         </div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, nam

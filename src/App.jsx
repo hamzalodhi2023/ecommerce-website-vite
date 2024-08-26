@@ -43,11 +43,11 @@ function App() {
           path: "/login",
           element: <Login />,
         },
-        {
-          path: "*",
-          element: <Error />,
-        },
       ],
+    },
+    {
+      path: "*",
+      element: <Error />,
     },
   ]);
   return <RouterProvider router={router} />;
