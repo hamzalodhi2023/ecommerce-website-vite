@@ -1,11 +1,18 @@
 import { NavLink } from "react-router-dom";
 import Button from "./layout/ui/Button";
+import { useContext } from "react";
+import { ThemeContext } from "./context/ThemeContext";
 
 // eslint-disable-next-line react/prop-types
 function Header({ data }) {
+  const { theme } = useContext(ThemeContext);
+  console.log(theme);
+
   return (
-    <div className="mb-10 flex h-[80dvh] w-full items-center justify-center gap-5 px-20">
-      <div className="text-div flex w-full flex-col justify-evenly gap-4 text-justify md:w-1/2 md:items-start">
+    <div
+      className={`${theme === false ? "bg-[#fff]" : "bg-zinc-900 text-white"} flex h-[80dvh] w-full items-center justify-center gap-5 px-20 pb-10`}
+    >
+      <div className="text-div flex w-full flex-col justify-evenly gap-4 text-justify lg:w-1/2 lg:items-start">
         <div>
           <p className="text-xl text-[#5471c7]">WELCOME TO</p>
           <h1 className="text-5xl font-bold">{data}</h1>
@@ -14,13 +21,13 @@ function Header({ data }) {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, nam
           recusandae. Consequatur iusto, necessitatibus alias molestiae incidunt
           consequuntur commodi saepe, laboriosam fugit quam suscipit aspernatur
-          deserunt sed blanditiis deleniti at fuga eius quae soluta, tempore id
+          deserunt sed blanditiis deleniti at fuga eius quae soluta, tempore id.
         </p>
         <NavLink to="/products" className="w-fit">
           <Button data={"SHOP NOW"} />
         </NavLink>
       </div>
-      <div className="img-div relative hidden h-full w-1/2 items-center justify-center md:flex">
+      <div className="img-div relative hidden h-full w-1/2 items-center justify-center lg:flex">
         <figure className="absolute z-10">
           <img
             src="./images/hero.jpg"

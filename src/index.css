@@ -62,8 +62,8 @@
   right: 20px;
   width: 150px;
   height: 150px;
-  /* background-color: #b7b0f3; */
-  background-color: #3e1563;
+  background-color: #b7b0f3;
+  /* background-color: #3e1563; */
 }
 
 .img-div::before {
@@ -73,7 +73,7 @@
   left: 20px;
   width: 150px;
   height: 150px;
-  background-color: #3e1563;
+  background-color: #b7b0f3;
   margin-top: 20px;
 }
 
