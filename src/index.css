@@ -5,6 +5,7 @@
 /*? Navbar Styling Started */
 * {
   box-sizing: border-box;
+  transition: 0.08s;
 }
 
 .o-h {

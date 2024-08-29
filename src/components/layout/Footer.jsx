@@ -3,11 +3,16 @@ import Button from "./ui/Button";
 import { FaDiscord } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
+import { useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
 
 function Footer() {
+  const { theme } = useContext(ThemeContext);
   return (
     <div className="relative min-h-[50dvh] w-full bg-[#06132f] px-10 pt-20 md:px-40">
-      <div className="absolute left-[50%] top-[-20%] flex h-[20dvh] w-[80%] translate-x-[-50%] items-center justify-between rounded-xl bg-[#f6f8fa] px-20">
+      <div
+        className={`${theme === false ? "bg-[#e2edfa]" : "bg-zinc-800 text-white"} absolute left-[50%] top-[-20%] flex h-[20dvh] w-[80%] translate-x-[-50%] items-center justify-between rounded-xl bg-[#f6f8fa] px-20`}
+      >
         <p>
           Ready to get Started?
           <br />

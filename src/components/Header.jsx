@@ -6,8 +6,6 @@ import { ThemeContext } from "./context/ThemeContext";
 // eslint-disable-next-line react/prop-types
 function Header({ data }) {
   const { theme } = useContext(ThemeContext);
-  console.log(theme);
-
   return (
     <div
       className={`${theme === false ? "bg-[#fff]" : "bg-zinc-900 text-white"} flex h-[80dvh] w-full items-center justify-center gap-5 px-20 pb-10`}
