@@ -7,9 +7,7 @@ function ProductReducer(state, action) {
       };
 
     case "SET_PRODUCTS":
-      const featureData = action.payload.filter(
-        (curElem) => curElem.featureProducts,
-      );
+      const featureData = action.payload.filter((curElem) => curElem.featured);
 
       return {
         ...state,

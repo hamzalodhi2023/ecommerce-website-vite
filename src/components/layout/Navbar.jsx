@@ -113,7 +113,7 @@ function Navbar() {
             >
               <CiShoppingCart className="text-3xl" />
               <span className="absolute right-0 top-0 flex h-[20px] w-[20px] items-center justify-center rounded-full bg-[#717ed9] text-[10px] text-white">
-                10
+                9
               </span>
             </NavLink>
           </li>
