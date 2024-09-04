@@ -5,9 +5,8 @@ import { NavLink } from "react-router-dom";
 
 function FeatureProducts() {
   const { theme } = useContext(ThemeContext);
-  const { loading, featureProducts } = useContext(ProductContext);
-  console.log(loading, featureProducts);
-  if (loading) {
+  const { isLoading, featureProducts } = useContext(ProductContext);
+  if (isLoading) {
     return (
       <>
         <div

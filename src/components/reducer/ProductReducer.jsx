@@ -1,9 +1,10 @@
+/* eslint-disable no-case-declarations */
 function ProductReducer(state, action) {
   switch (action.type) {
     case "LOADING":
       return {
         ...state,
-        loading: true,
+        isLoading: true,
       };
 
     case "SET_PRODUCTS":
@@ -11,7 +12,7 @@ function ProductReducer(state, action) {
 
       return {
         ...state,
-        loading: false,
+        isLoading: false,
         products: action.payload,
         featureProducts: featureData,
       };
@@ -19,7 +20,7 @@ function ProductReducer(state, action) {
     case "API_ERROR":
       return {
         ...state,
-        loading: false,
+        isLoading: false,
         isError: true,
       };
 

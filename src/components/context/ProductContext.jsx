@@ -9,7 +9,7 @@ const API = "https://api.pujakaitem.com/api/products";
 export const ProductProvider = ({ children }) => {
   //` initial State function in use reducer
   const initialState = {
-    loading: false,
+    isLoading: false,
     isError: false,
     products: [],
     featureProducts: [],
@@ -30,12 +30,24 @@ export const ProductProvider = ({ children }) => {
       });
       // eslint-disable-next-line no-unused-vars
     } catch (error) {
-      dispatch({ type: "API_ERROR" });
+      dispatch({ type: "ALL PRODUCT ARE NOT FOUND" });
     }
   };
 
-  //` Use Effect
+  //` Function For SingleProduct API
+  const getSingleProduct = async (url) => {
+    try {
+      const res = await axios.get(url);
+      const singleProduct = res.data;
+      console.log(singleProduct);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  //` Use Effect For Main API
   useEffect(() => {
+    getSingleProduct(API);
     getProducts(API);
   }, []);
 
