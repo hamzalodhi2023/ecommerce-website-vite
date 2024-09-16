@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import axios from "axios";
 import { createContext, useEffect, useReducer } from "react";
 import ProductReducer from "../reducer/ProductReducer";
@@ -13,6 +14,8 @@ export const ProductProvider = ({ children }) => {
     isError: false,
     products: [],
     featureProducts: [],
+    isSingleLoading: false,
+    singleProduct: {},
   };
 
   // ` use Reducer
@@ -23,7 +26,7 @@ export const ProductProvider = ({ children }) => {
     dispatch({ type: "LOADING" });
     try {
       const res = await axios.get(url);
-      const products = res.data;
+      const products = await res.data;
       dispatch({
         type: "SET_PRODUCTS",
         payload: products,
@@ -36,23 +39,23 @@ export const ProductProvider = ({ children }) => {
 
   //` Function For SingleProduct API
   const getSingleProduct = async (url) => {
+    dispatch({ type: "SET_SINGLE_LOADING" });
     try {
       const res = await axios.get(url);
-      const singleProduct = res.data;
-      console.log(singleProduct);
+      const singleProduct = await res.data;
+      dispatch({ type: "SET_SINGLE_PRODUCT", payload: singleProduct });
     } catch (error) {
-      console.log(error);
+      dispatch({ type: "SET_SINGLE_ERROR" });
     }
   };
 
   //` Use Effect For Main API
   useEffect(() => {
-    getSingleProduct(API);
     getProducts(API);
   }, []);
 
   return (
-    <ProductContext.Provider value={{ ...state }}>
+    <ProductContext.Provider value={{ ...state, getSingleProduct }}>
       {children}
     </ProductContext.Provider>
   );

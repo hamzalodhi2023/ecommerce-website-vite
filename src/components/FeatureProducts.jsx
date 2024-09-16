@@ -12,14 +12,8 @@ function FeatureProducts() {
         <div
           className={`${theme === false ? "bg-[#ffffff]" : "bg-zinc-800 text-white"} flex h-screen w-full flex-col items-center justify-center text-black`}
         >
-          <h1
-            className={`${theme === false ? "text-black" : "text-white"} m-5 text-5xl`}
-          >
-            Loading...
-          </h1>
-          <div className="flex items-center justify-center">
-            <br />
-            <div className="h-16 w-16 animate-spin rounded-full border-4 border-solid border-current border-white border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"></div>
+          <div className="flex h-64 items-center justify-center">
+            <div className="h-16 w-16 animate-spin rounded-full border-b-2 border-t-2 border-gray-900"></div>
           </div>
         </div>
       </>
@@ -35,7 +29,6 @@ function FeatureProducts() {
       </div>
       <div className="card-main-div flex h-full w-full flex-col items-center justify-center gap-4 lg:flex-row lg:justify-evenly">
         {featureProducts.map((item) => {
-          console.log(item);
           return (
             <NavLink to={`/singleproduct/${item.id}`} key={item.id}>
               <div
