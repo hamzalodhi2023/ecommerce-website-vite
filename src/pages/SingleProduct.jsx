@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useContext, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { ProductContext } from "../components/context/ProductContext";
@@ -7,7 +8,6 @@ const API = "https://api.pujakaitem.com/api/products";
 
 function SingleProduct() {
   // Getting data from ProductContext with the help of useContext
-  // eslint-disable-next-line no-unused-vars
   const { getSingleProduct, isSingleLoading, singleProduct } =
     useContext(ProductContext);
 
