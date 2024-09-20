@@ -43,16 +43,7 @@ function SingleProduct() {
   return (
     <div className="container mx-auto p-4 pb-32">
       <div className="flex flex-col md:flex-row">
-        <div className="flex flex-col items-center md:w-1/2">
-          {/* <img
-            src={image[0].url}
-            alt="apple"
-            className="mb-4 h-64 w-full object-cover"
-          /> */}
-          <div className="flex w-full justify-center gap-2 py-2">
-            <SingleProductImage images={image} />
-          </div>
-        </div>
+        <SingleProductImage images={image} />
         <div className="p-4 md:w-1/2">
           <h1 className="text-3xl font-bold">
             {name
@@ -78,7 +69,7 @@ function SingleProduct() {
           </p>
 
           <p className="mt-4 text-[#6354e9]">
-            <span className="font-bold">Deal of the day:</span>
+            <span className="font-bold">Deal of the day: </span>
             {Intl.NumberFormat("en-PK", {
               style: "currency",
               currency: "PKR",
