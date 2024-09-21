@@ -1,0 +1,568 @@
+[
+  {
+    "id": "HS-001",
+    "name": "Iphone X",
+    "company": "Apple",
+    "price": 600000,
+    "colors": ["#ff0000", "#000000", "#CDD0D0"],
+    "description": "The mobile is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "Mobile",
+    "featured": true,
+    "stock": 5,
+    "reviews": 58,
+    "stars": 4.8,
+    "image": [
+      {
+        "id": "HSIMG-01-01",
+        "width": 563,
+        "height": 765,
+        "url": "https://m.media-amazon.com/images/I/61VuVU94RnL._AC_SX679_.jpg",
+        "filename": "prod-1.png",
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-01-02",
+        "width": 679,
+        "height": 679,
+        "url": "https://m.media-amazon.com/images/I/61qD-qiTKEL._AC_SX679_.jpg",
+        "filename": "prod-2.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-01-03",
+        "width": 679,
+        "height": 679,
+        "url": "https://m.media-amazon.com/images/I/71NFbevuesL._AC_SX679_.jpg",
+        "filename": "prod-3.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-01-04",
+        "width": 679,
+        "height": 679,
+        "url": "https://m.media-amazon.com/images/I/71SfvBP1gBL._AC_SX679_.jpg",
+        "filename": "prod-4.png",
+        "size": 1080,
+        "type": "image/png"
+      }
+    ]
+  },
+
+  {
+    "id": "HS-002",
+    "name": "Samsung s20",
+    "company": "Samsung",
+    "price": 500000,
+    "colors": ["#000", "#22D3EF"],
+    "description": "The mobile is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "Mobile",
+    "shipping": true,
+    "stock": 10,
+    "reviews": 28,
+    "stars": 4.4,
+    "image": [
+      {
+        "id": "HSIMG-02-01",
+        "width": 649,
+        "height": 765,
+        "url": "https://m.media-amazon.com/images/I/61WeLSi+UiL._AC_SX679_.jpg",
+        "filename": "prod-1.png",
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-02-02",
+        "width": 319,
+        "height": 679,
+        "url": "https://m.media-amazon.com/images/I/61up7u4v6mL._AC_SY679_.jpg",
+        "filename": "prod-2.png",
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-02-03",
+        "width": 319,
+        "height": 679,
+        "url": "https://m.media-amazon.com/images/I/51Uzw0jDYkL._AC_SY679_.jpg",
+        "filename": "prod-3.png",
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-02-04",
+        "width": 271,
+        "height": 679,
+        "url": "https://m.media-amazon.com/images/I/61DPd7tKdeL._AC_SY679_.jpg",
+        "filename": "prod-4.png",
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "HS-003",
+    "name": "Dell Series",
+    "company": "Dell",
+    "price": 702899,
+    "colors": ["#22D3EF", "#CDD0D0"],
+    "description": "The Laptop is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "Laptop",
+    "stock": 12,
+    "reviews": 28,
+    "stars": 4.2,
+    "image": [
+      {
+        "id": "HSIMG-03-01",
+        "width": 679,
+        "height": 471,
+        "url": "https://m.media-amazon.com/images/I/715LBvCan5L._AC_SX679_.jpg",
+        "filename": "prod-1.png",
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-03-02",
+        "width": 679,
+        "height": 462,
+        "url": "https://m.media-amazon.com/images/I/51KzNYJIVKL._AC_SX679_.jpg",
+        "filename": "prod-2.png",
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-03-03",
+        "width": 679,
+        "height": 447,
+        "url": "https://m.media-amazon.com/images/I/41VqetrFiLL._AC_SX679_.jpg",
+        "filename": "prod-3.png",
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-03-04",
+        "width": 679,
+        "height": 462,
+        "url": "https://m.media-amazon.com/images/I/51B6AYSgQEL._AC_SX679_.jpg",
+        "filename": "prod-4.png",
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "HS-004",
+    "name": "Nokia 420",
+    "company": "Nokia",
+    "price": 102999,
+    "colors": ["#000000", "#CDD0D0"],
+    "description": "The mobile is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "Mobile",
+    "shipping": true,
+    "stock": 6,
+    "reviews": 28,
+    "stars": 3.8,
+    "image": [
+      {
+        "id": "HSIMG-04-01",
+        "width": 615,
+        "height": 1497,
+        "url": "https://m.media-amazon.com/images/I/61oyW1b3j2L._AC_SX679_.jpg",
+        "filename": "prod-1.png",
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-04-02",
+        "width": 615,
+        "height": 1499,
+        "url": "https://m.media-amazon.com/images/I/61q4pfrP9qL._AC_SX679_.jpg",
+        "filename": "prod-2.png",
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-04-03",
+        "width": 679,
+        "height": 1006,
+        "url": "https://m.media-amazon.com/images/I/61LWMd6o0sL._AC_SX679_.jpg",
+        "filename": "prod-3.png",
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-04-04",
+        "width": 679,
+        "height": 679,
+        "url": "https://m.media-amazon.com/images/I/61BFcF60L4L._AC_SX679_.jpg",
+        "filename": "prod-4.png",
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "HS-005",
+    "name": "Mac PC",
+    "company": "Apple",
+    "price": 200999,
+    "colors": ["#000", "#CDD0D0"],
+    "description": "The Computer is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "Computer",
+    "shipping": true,
+    "stock": 4,
+    "reviews": 28,
+    "stars": 2.8,
+    "image": [
+      {
+        "id": "HSIMG-05-01",
+        "width": 522,
+        "height": 440,
+        "url": "https://m.media-amazon.com/images/I/61AWSyzWrmS._AC_SX522_.jpg",
+        "filename": "prod-1.png",
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-05-02",
+        "width": 522,
+        "height": 1631,
+        "url": "https://m.media-amazon.com/images/I/51EOFCGfQbS._AC_SX522_.jpg",
+        "filename": "prod-2.png",
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-05-03",
+        "width": 522,
+        "height": 586,
+        "url": "https://m.media-amazon.com/images/I/71kB85PZnGS._AC_SX522_.jpg",
+        "filename": "prod-3.png",
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-05-04",
+        "width": 522,
+        "height": 513,
+        "url": "https://m.media-amazon.com/images/I/71bKNFQrx9S._AC_SX522_.jpg",
+        "filename": "prod-4.png",
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "HS-006",
+    "name": "Macbook Pro",
+    "company": "Apple",
+    "price": 699999,
+    "colors": ["#000000", "#CDD0D0"],
+    "description": "The Laptop is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "Laptop",
+    "shipping": true,
+    "stock": 6,
+    "reviews": 12,
+    "stars": 4.1,
+    "image": [
+      {
+        "id": "HSIMG-06-01",
+        "width": 342,
+        "height": 204,
+        "url": "https://m.media-amazon.com/images/I/61lYIKPieDL.__AC_SY445_SX342_QL70_FMwebp_.jpg",
+        "filename": "prod-1.png",
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-06-02",
+        "width": 466,
+        "height": 277,
+        "url": "https://m.media-amazon.com/images/I/71OSDB-Ez2L._AC_SX466_.jpg",
+        "filename": "prod-2.png",
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-06-03",
+        "width": 466,
+        "height": 301,
+        "url": "https://m.media-amazon.com/images/I/817XayGXjeL._AC_SX466_.jpg",
+        "filename": "prod-3.png",
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-06-04",
+        "width": 466,
+        "height": 466,
+        "url": "https://m.media-amazon.com/images/I/61qGvTA5PkL._AC_SX466_.jpg",
+        "filename": "prod-4.png",
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "HS-007",
+    "name": "Asus Gseries",
+    "company": "Asus",
+    "price": 509999,
+    "colors": ["#CDD0D0", "#000"],
+    "description": "The laptop is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "Laptop",
+    "shipping": true,
+    "stock": 6,
+    "reviews": 23,
+    "stars": 3.7,
+    "image": [
+      {
+        "id": "HSIMG-07-01",
+        "width": 561,
+        "height": 450,
+        "url": "https://m.media-amazon.com/images/I/91aWfctUptL._AC_SY450_.jpg",
+        "filename": "prod-1.png",
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-07-02",
+        "width": 450,
+        "height": 450,
+        "url": "https://m.media-amazon.com/images/I/71ZBi-zVTFL._AC_SY450_.jpg",
+        "filename": "prod-2.png",
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-07-03",
+        "width": 450,
+        "height": 450,
+        "url": "https://m.media-amazon.com/images/I/61q0nZvRKxL._AC_SY450_.jpg",
+        "filename": "prod-3.png",
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-07-04",
+        "width": 450,
+        "height": 450,
+        "url": "https://m.media-amazon.com/images/I/61YEcMOA6OL._AC_SY450_.jpg",
+        "filename": "prod-4.png",
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "HS-008",
+    "name": "Accessories",
+    "price": 409999,
+    "company": "Lenovo",
+    "colors": ["#000", "#CDD0D0"],
+    "description": "The accessories is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "Accessories",
+    "featured": true,
+    "shipping": true,
+    "stock": 6,
+    "reviews": 23,
+    "stars": 4.2,
+    "image": [
+      {
+        "id": "HSIMG-08-01",
+        "width": 740,
+        "height": 1109,
+        "url": "https://img.freepik.com/free-photo/model-career-kit-still-life_23-2150229758.jpg?t=st=1726907672~exp=1726911272~hmac=de985c3ccfbcd2d97a7d53647eeaa21923be45146790247b2ad9b70f9b4e2336&w=740",
+        "filename": "prod-1.png",
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-08-02",
+        "width": 900,
+        "height": 601,
+        "url": "https://img.freepik.com/free-photo/model-career-kit-still-life_23-2150229755.jpg?t=st=1726907740~exp=1726911340~hmac=7247c4992cb2314fdb7e9e68a83e9203aa7cd50ed1d9f6617f95edf588b164ac&w=900",
+        "filename": "prod-2.png",
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-08-03",
+        "width": 900,
+        "height": 600,
+        "url": "https://img.freepik.com/free-photo/view-women-bag-stuff-wooden-background_93675-134112.jpg?t=st=1726907765~exp=1726911365~hmac=ebca228aa810e0a4a9187a485ba6da4c2db8cb7a886acba8025079fccf5a2755&w=900",
+        "filename": "prod-3.png",
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-08-04",
+        "width": 900,
+        "height": 600,
+        "url": "https://img.freepik.com/free-photo/makeup-supplies-near-notebooks-glasses_23-2147779000.jpg?t=st=1726907819~exp=1726911419~hmac=7b644582b76885bbc96e60eab8ac26673f709dfba5288b26213160a8172c0219&w=900",
+        "filename": "prod-4.png",
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "HS-009",
+    "name": "Wrist Watch",
+    "price": 109999,
+    "company": "Apple",
+    "colors": ["#000000"],
+    "description": "This watch is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "Watch",
+    "shipping": true,
+    "stock": 6,
+    "reviews": 23,
+    "stars": 4.6,
+    "image": [
+      {
+        "id": "HSIMG-09-01",
+        "width": 569,
+        "height": 667,
+        "url": "https://m.media-amazon.com/images/I/81TNLTdDuCL._AC_SX569_.jpg",
+        "filename": "prod-1.png",
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-09-02",
+        "width": 679,
+        "height": 714,
+        "url": "https://m.media-amazon.com/images/I/812K5lVE-WL._AC_SX679_.jpg",
+        "filename": "prod-2.png",
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-09-03",
+        "width": 290,
+        "height": 741,
+        "url": "https://m.media-amazon.com/images/I/81IN28LDuuL._AC_SY741_.jpg",
+        "filename": "prod-3.png",
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-09-04",
+        "width": 679,
+        "height": 679,
+        "url": "https://m.media-amazon.com/images/I/61suFAvFJGL._AC_SX679_.jpg",
+        "filename": "prod-4.png",
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "HS-010",
+    "name": "User Needs",
+    "company": "Apple",
+    "price": 300099,
+    "colors": ["#ff0000", "#22D3EF", "#000000"],
+    "description": "The mobile is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "Accessories",
+    "stock": 6,
+    "reviews": 23,
+    "stars": 4.2,
+    "image": [
+      {
+        "id": "HSIMG-10-01",
+        "width": 679,
+        "height": 725,
+        "url": "https://m.media-amazon.com/images/I/812JNL02tAL._AC_SX679_PIbundle-26,TopRight,0,0_SH20_.jpg",
+        "filename": "prod-1.png",
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-10-02",
+        "width": 679,
+        "height": 679,
+        "url": "https://m.media-amazon.com/images/I/71JrDh96LKL._AC_SX679_.jpg",
+        "filename": "prod-2.png",
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-10-03",
+        "width": 679,
+        "height": 690,
+        "url": "https://m.media-amazon.com/images/I/61vZXaLHtaL._AC_SX679_.jpg",
+        "filename": "prod-3.png",
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-10-04",
+        "width": 679,
+        "height": 769,
+        "url": "https://m.media-amazon.com/images/I/71yvm4NHbmL._AC_SX679_.jpg",
+        "filename": "prod-4.png",
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "HS-011",
+    "name": "Rolex Premium",
+    "company": "Rolex",
+    "price": 99999,
+    "colors": ["#000000", "#CDD0D0"],
+    "description": "This watch is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "Watch",
+    "stock": 6,
+    "reviews": 60,
+    "stars": 4.8,
+    "image": [
+      {
+        "id": "HSIMG-11-01",
+        "width": 679,
+        "height": 1033,
+        "url": "https://m.media-amazon.com/images/I/81io8OejSiL._AC_SX679_.jpg",
+        "filename": "prod-1.png",
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-11-02",
+        "width": 679,
+        "height": 899,
+        "url": "https://m.media-amazon.com/images/I/71KsbQ0kNQL._AC_SX679_.jpg",
+        "filename": "prod-2.png",
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-11-03",
+        "width": 679,
+        "height": 1180,
+        "url": "https://m.media-amazon.com/images/I/81CZV2Mt9NL._AC_SX679_.jpg",
+        "filename": "prod-3.png",
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-11-04",
+        "width": 679,
+        "height": 642,
+        "url": "https://m.media-amazon.com/images/I/41vvTXd0ZnL._AC_SX679_.jpg",
+        "filename": "prod-4.png",
+        "type": "image/png"
+      }
+    ]
+  },
+  {
+    "id": "HS-012",
+    "name": "Galaxy w20",
+    "price": 311999,
+    "company": "Samsung",
+    "colors": ["#22D3EF", "#ff0000", "#000000"],
+    "description": "This watch is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "Watch",
+    "featured": true,
+    "stock": 6,
+    "reviews": 60,
+    "stars": 4.4,
+    "image": [
+      {
+        "id": "HSIMG-12-01",
+        "width": 679,
+        "height": 756,
+        "url": "https://m.media-amazon.com/images/I/71EHTkDQqfL._AC_SX679_.jpg",
+        "filename": "prod-1.png",
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-12-02",
+        "width": 679,
+        "height": 668,
+        "url": "https://m.media-amazon.com/images/I/715ZpRZW+6L._AC_SX679_.jpg",
+        "filename": "prod-2.png",
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-12-03",
+        "width": 679,
+        "height": 673,
+        "url": "https://m.media-amazon.com/images/I/71kxcQ7tGyL._AC_SX679_.jpg",
+        "filename": "prod-3.png",
+        "type": "image/png"
+      },
+      {
+        "id": "HSIMG-12-04",
+        "width": 679,
+        "height": 602,
+        "url": "https://m.media-amazon.com/images/I/718HgfurplL._AC_SX679_.jpg",
+        "filename": "prod-4.png",
+        "type": "image/png"
+      }
+    ]
+  }
+]

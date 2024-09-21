@@ -5,7 +5,7 @@ import ProductReducer from "../reducer/ProductReducer";
 
 export const ProductContext = createContext();
 
-const API = "https://api.pujakaitem.com/api/products";
+const API = "http://localhost:3000/api/products";
 // eslint-disable-next-line react/prop-types
 export const ProductProvider = ({ children }) => {
   //` initial State function in use reducer

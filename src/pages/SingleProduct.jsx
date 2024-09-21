@@ -3,14 +3,15 @@ import { useContext, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { ProductContext } from "../components/context/ProductContext";
 import SingleProductImage from "../components/SingleProductImage";
+import Stars from "../components/Stars";
 
-const API = "https://api.pujakaitem.com/api/products";
+const API = "http://localhost:3000/api/products";
 
 function SingleProduct() {
   // Getting data from ProductContext with the help of useContext
   const { getSingleProduct, isSingleLoading, singleProduct } =
     useContext(ProductContext);
-
+  console.log(singleProduct);
   // Params Hook
 
   const { id } = useParams();
@@ -45,18 +46,7 @@ function SingleProduct() {
       <div className="flex flex-col md:flex-row">
         <SingleProductImage images={image} />
         <div className="p-4 md:w-1/2">
-          <h1 className="text-3xl font-bold">
-            {name
-              ? name
-                  .split(" ")
-                  .map(
-                    (word) =>
-                      word.charAt(0).toUpperCase() +
-                      word.slice(1).toLowerCase(),
-                  )
-                  .join(" ")
-              : "Loading..."}
-          </h1>
+          <h1 className="text-3xl font-bold">{name}</h1>
           <p className="mt-2 text-lg">
             <span className="font-bold">MRP:</span>
             <del>
@@ -86,8 +76,7 @@ function SingleProduct() {
             {stock > 0 ? "In stock" : "Out of stock"}
           </div>
           <div className="mt-1">
-            <span className="font-bold">Rating:</span> {stars} Stars ({reviews}{" "}
-            Reviews)
+            <Stars stars={stars} reviews={reviews} />
           </div>
           <div className="mt-1">
             <span className="font-bold">Product ID:</span> {alias}

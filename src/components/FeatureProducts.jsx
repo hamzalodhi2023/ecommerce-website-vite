@@ -32,7 +32,11 @@ function FeatureProducts() {
           return (
             <NavLink to={`/singleproduct/${item.id}`} key={item.id}>
               <div
-                className="product product relative h-[200px] w-[300px] overflow-hidden rounded-2xl shadow-lg shadow-zinc-600"
+                style={{
+                  boxShadow:
+                    "rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px",
+                }}
+                className="product product relative h-[400px] w-[300px] overflow-hidden rounded-2xl"
                 key={item.id}
               >
                 <img
