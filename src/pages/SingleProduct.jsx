@@ -11,7 +11,6 @@ function SingleProduct() {
   // Getting data from ProductContext with the help of useContext
   const { getSingleProduct, isSingleLoading, singleProduct } =
     useContext(ProductContext);
-  console.log(singleProduct);
   // Params Hook
 
   const { id } = useParams();

@@ -42,6 +42,4 @@ app.get("/api/products", async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`http://localhost:3000/api/products`);
-});
+app.listen(PORT);
