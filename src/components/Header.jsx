@@ -1,15 +1,9 @@
 import { NavLink } from "react-router-dom";
 import Button from "./layout/ui/Button";
-import { useContext } from "react";
-import { ThemeContext } from "./context/ThemeContext";
-
 // eslint-disable-next-line react/prop-types
 function Header({ data }) {
-  const { theme } = useContext(ThemeContext);
   return (
-    <div
-      className={`${theme === false ? "bg-[#fff]" : "bg-zinc-900 text-white"} flex h-[80dvh] w-full items-center justify-center gap-5 px-20 pb-10`}
-    >
+    <div className="flex h-[80dvh] w-full items-center justify-center gap-5 px-20 pb-10">
       <div className="text-div flex w-full flex-col justify-evenly gap-4 text-justify lg:w-1/2 lg:items-start">
         <div>
           <p className="text-xl text-[#5471c7]">WELCOME TO</p>

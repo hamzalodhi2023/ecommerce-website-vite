@@ -9,7 +9,6 @@ import Login from "./pages/Login";
 import Error from "./pages/Error";
 import Layout from "./components/layout/Layout";
 import { ProductProvider } from "./components/context/ProductContext";
-import { ThemeProvider } from "./components/context/ThemeContext";
 
 function App() {
   const router = createBrowserRouter([
@@ -55,11 +54,9 @@ function App() {
 
   return (
     <>
-      <ThemeProvider>
         <ProductProvider>
           <RouterProvider router={router} />
         </ProductProvider>
-      </ThemeProvider>
     </>
   );
 }

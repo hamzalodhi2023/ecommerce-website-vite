@@ -1,17 +1,13 @@
 import { useContext } from "react";
 import { ProductContext } from "./context/ProductContext";
-import { ThemeContext } from "./context/ThemeContext";
 import { NavLink } from "react-router-dom";
 
 function FeatureProducts() {
-  const { theme } = useContext(ThemeContext);
   const { isLoading, featureProducts } = useContext(ProductContext);
   if (isLoading) {
     return (
       <>
-        <div
-          className={`${theme === false ? "bg-[#ffffff]" : "bg-zinc-800 text-white"} flex h-screen w-full flex-col items-center justify-center text-black`}
-        >
+        <div className="flex h-screen w-full flex-col items-center justify-center bg-[#ffffff] text-black">
           <div className="flex h-64 items-center justify-center">
             <div className="h-16 w-16 animate-spin rounded-full border-b-2 border-t-2 border-gray-900"></div>
           </div>
@@ -20,9 +16,7 @@ function FeatureProducts() {
     );
   }
   return (
-    <div
-      className={`${theme === false ? "bg-[#ffffff]" : "bg-zinc-900 text-white"} flex w-full flex-col items-center justify-center gap-4 px-20 pb-10`}
-    >
+    <div className="flex w-full flex-col items-center justify-center gap-4 bg-[#ffffff] px-20 pb-10">
       <div className="w-full py-10">
         <p className="text-[#5471c7]">CHECK NOW!</p>
         <h2 className="text-4xl font-semibold">Our Featured Products</h2>
