@@ -4,6 +4,7 @@ import Button from "./layout/ui/Button";
 import { FaCheck } from "react-icons/fa6";
 import { useState } from "react";
 import CartAmountToggle from "./CartAmountToggle";
+import { NavLink } from "react-router-dom";
 
 function AddToCart({ product }) {
   const { id, stock, colors } = product;
@@ -41,7 +42,9 @@ function AddToCart({ product }) {
         setIncrease={setIncrease}
       />
 
-      <Button data="Add to Cart" className={`mt-4`} />
+      <NavLink to="/cart">
+        <Button data="Add to Cart" className={`mt-4`} />
+      </NavLink>
     </>
   );
 }
