@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { ProductContext } from "../components/context/ProductContext";
 import SingleProductImage from "../components/SingleProductImage";
 import Stars from "../components/Stars";
+import AddToCart from "../components/AddToCart";
 
 const API = "http://localhost:3000/api/products";
 
@@ -83,9 +84,8 @@ function SingleProduct() {
           <div className="mt-1">
             <span className="font-bold">Brand:</span> {company}
           </div>
-          <button className="mt-4 rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700">
-            Add to Cart
-          </button>
+          <hr className="h-[1px] border-none bg-zinc-500" />
+          {stock > 0 && <AddToCart product={singleProduct} />}
         </div>
       </div>
     </div>
