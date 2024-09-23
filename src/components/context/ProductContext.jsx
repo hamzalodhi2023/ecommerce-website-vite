@@ -31,7 +31,6 @@ export const ProductProvider = ({ children }) => {
         type: "SET_PRODUCTS",
         payload: products,
       });
-      // eslint-disable-next-line no-unused-vars
     } catch (error) {
       dispatch({ type: "ALL PRODUCT ARE NOT FOUND" });
     }
