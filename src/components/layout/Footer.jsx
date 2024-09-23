@@ -7,7 +7,7 @@ import { FaFacebookF } from "react-icons/fa";
 function Footer() {
   return (
     <div className="relative min-h-[50dvh] w-full bg-[#06132f] px-10 pt-20 md:px-40">
-      <div className="absolute left-[50%] top-[-20%] flex h-[20dvh] w-[80%] translate-x-[-50%] items-center justify-between rounded-xl bg-[#e2edfa] px-20">
+      <div className="absolute left-[50%] top-[-20%] flex h-[20dvh] w-[80%] translate-x-[-50%] items-center justify-between rounded-xl bg-[#e2edfa] px-20 dark:bg-zinc-800 dark:text-white">
         <p>
           Ready to get Started?
           <br />

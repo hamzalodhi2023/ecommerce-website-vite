@@ -1,17 +1,35 @@
 import { NavLink } from "react-router-dom";
 import { CiShoppingCart } from "react-icons/ci";
 import { IoClose } from "react-icons/io5";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoIosMenu } from "react-icons/io";
 import Button from "./ui/Button";
+import { FaSun } from "react-icons/fa";
+import { IoMoonSharp } from "react-icons/io5";
 
 function Navbar() {
   const [close, setClose] = useState(false);
+  const [theme, setTheme] = useState(false);
+
+  useEffect(() => {
+    if (localStorage.getItem("theme") === "dark") {
+      document.body.classList.add("dark");
+      setTheme(true);
+    } else {
+      document.body.classList.remove("dark");
+      setTheme(false);
+    }
+  }, [setTheme]);
+
   return (
-    <nav className="flex w-full items-center justify-between overflow-hidden bg-[#e2edfa] px-5 py-5">
+    <nav className="flex w-full items-center justify-between overflow-hidden bg-[#e2edfa] px-5 py-5 dark:bg-zinc-800 dark:text-white">
       <div className="logo-div">
         <NavLink to="/" className="after:hidden">
-          <img src="./images/logo.png" alt="" className="w-44" />
+          <img
+            src={`./images/logo${theme === false ? "Light" : "Dark"}Mode.png`}
+            alt=""
+            className="w-44"
+          />
         </NavLink>
       </div>
       <IoIosMenu
@@ -94,6 +112,27 @@ function Navbar() {
                 9
               </span>
             </NavLink>
+          </li>
+          <li
+            className="relative flex h-[40px] w-[40px] cursor-pointer items-center justify-center"
+            onClick={() => {
+              setTheme(!theme);
+              document.body.classList.toggle("dark");
+              !theme
+                ? localStorage.setItem("theme", "dark")
+                : localStorage.setItem("theme", "light");
+            }}
+          >
+            {theme === false ? (
+              <FaSun className="cursor-pointer text-xl" />
+            ) : (
+              <IoMoonSharp
+                className="cursor-pointer text-xl text-[#5471c7]"
+                onClick={() => {
+                  setTheme(!theme);
+                }}
+              />
+            )}
           </li>
         </ul>
       </div>

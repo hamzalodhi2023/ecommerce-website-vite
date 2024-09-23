@@ -16,7 +16,7 @@ function FeatureProducts() {
     );
   }
   return (
-    <div className="flex w-full flex-col items-center justify-center gap-4 bg-[#ffffff] px-20 pb-10">
+    <div className="flex w-full flex-col items-center justify-center gap-4 bg-[#ffffff] px-20 pb-10 dark:bg-zinc-900 dark:text-white">
       <div className="w-full py-10">
         <p className="text-[#5471c7]">CHECK NOW!</p>
         <h2 className="text-4xl font-semibold">Our Featured Products</h2>
@@ -41,14 +41,14 @@ function FeatureProducts() {
                 <span className="absolute right-[10px] top-[10px] rounded-2xl bg-[white] px-4 py-1 text-[#5471c7] shadow-lg shadow-zinc-600">
                   {item.category}
                 </span>
-                <div className="flex h-[15%] w-full items-center justify-between px-4">
+                <div className="flex h-[15%] w-full items-center justify-between px-4 dark:bg-zinc-800">
                   <span>{item.name}</span>
                   <span className="text-[#5471c7]">
                     {Intl.NumberFormat("en-PK", {
                       style: "currency",
                       currency: "PKR",
                       minimumFractionDigits: 2,
-                    }).format(item.price / 100)}
+                    }).format(item.price / 100 + 250)}
                   </span>
                 </div>
               </div>

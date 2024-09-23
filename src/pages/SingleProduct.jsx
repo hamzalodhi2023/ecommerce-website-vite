@@ -35,26 +35,26 @@ function SingleProduct() {
 
   if (isSingleLoading) {
     return (
-      <div className="flex h-screen items-center justify-center">
-        <div className="h-32 w-32 animate-spin rounded-full border-b-4 border-t-4 border-blue-500"></div>
+      <div className="flex h-screen items-center justify-center dark:bg-zinc-900">
+        <div className="h-32 w-32 animate-spin rounded-full border-b-4 border-t-4 border-blue-500 dark:border-white"></div>
       </div>
     );
   }
 
   return (
-    <div className="container mx-auto p-4 pb-32">
+    <div className="container mx-auto p-4 pb-32 dark:bg-zinc-900 dark:text-white">
       <div className="flex flex-col md:flex-row">
         <SingleProductImage images={image} />
         <div className="p-4 md:w-1/2">
           <h1 className="text-3xl font-bold">{name}</h1>
           <p className="mt-2 text-lg">
-            <span className="font-bold">MRP:</span>
+            <span className="font-bold">MRP: </span>
             <del>
               {Intl.NumberFormat("en-PK", {
                 style: "currency",
                 currency: "PKR",
                 minimumFractionDigits: 2,
-              }).format((price + 25000) / 100)}
+              }).format(price / 100 + 250)}
             </del>
           </p>
 

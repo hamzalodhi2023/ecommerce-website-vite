@@ -8,6 +8,9 @@
   transition: 0.08s;
 }
 
+body.dark {
+  background-color: #18181b;
+}
 .o-h {
   overflow: hidden;
 }

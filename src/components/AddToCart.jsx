@@ -25,7 +25,6 @@ function AddToCart({ product }) {
             <button
               key={index}
               onClick={() => setColor(item)}
-              onDoubleClick={() => alert(color)}
               className={`flex h-5 w-5 items-center justify-center rounded-full ${color === item ? "opacity-100" : "opacity-20"}`}
               style={{ backgroundColor: item }}
             >

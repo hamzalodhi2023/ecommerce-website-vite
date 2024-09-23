@@ -3,7 +3,7 @@ import Button from "./layout/ui/Button";
 // eslint-disable-next-line react/prop-types
 function Header({ data }) {
   return (
-    <div className="flex h-[80dvh] w-full items-center justify-center gap-5 px-20 pb-10">
+    <div className="flex h-[80dvh] w-full items-center justify-center gap-5 bg-white px-20 pb-10 dark:bg-zinc-900 dark:text-white">
       <div className="text-div flex w-full flex-col justify-evenly gap-4 text-justify lg:w-1/2 lg:items-start">
         <div>
           <p className="text-xl text-[#5471c7]">WELCOME TO</p>
