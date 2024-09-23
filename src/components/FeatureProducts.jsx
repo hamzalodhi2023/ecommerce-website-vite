@@ -1,15 +1,19 @@
 import { useContext } from "react";
 import { ProductContext } from "./context/ProductContext";
 import { NavLink } from "react-router-dom";
+import { BounceLoader } from "react-spinners";
 
 function FeatureProducts() {
   const { isLoading, featureProducts } = useContext(ProductContext);
   if (isLoading) {
     return (
       <>
-        <div className="flex h-screen w-full flex-col items-center justify-center bg-[#ffffff] text-black">
-          <div className="flex h-64 items-center justify-center">
-            <div className="h-16 w-16 animate-spin rounded-full border-b-2 border-t-2 border-gray-900"></div>
+        <div className="flex h-auto w-full flex-col items-center justify-center bg-[#ffffff] text-black dark:bg-zinc-900">
+          <div className="flex h-64 flex-col items-center justify-center">
+            <BounceLoader color="#5471c7" size={100} />
+            <p className="mt-5 animate-pulse text-2xl font-semibold dark:text-white">
+              Loading...
+            </p>
           </div>
         </div>
       </>

@@ -25,7 +25,7 @@ function AddToCart({ product }) {
             <button
               key={index}
               onClick={() => setColor(item)}
-              className={`flex h-5 w-5 items-center justify-center rounded-full ${color === item ? "opacity-100" : "opacity-20"}`}
+              className={`flex h-5 w-5 items-center justify-center rounded-full border-[1px] border-black dark:border-white ${color === item ? "opacity-100" : "opacity-20"}`}
               style={{ backgroundColor: item }}
             >
               {color === item && <FaCheck className="text-white" />}
