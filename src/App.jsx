@@ -9,6 +9,7 @@ import Login from "./pages/Login";
 import Error from "./pages/Error";
 import Layout from "./components/layout/Layout";
 import { ProductProvider } from "./components/context/ProductContext";
+import { FilterContextProvider } from "./components/context/FilterContext";
 
 function App() {
   const router = createBrowserRouter([
@@ -54,9 +55,11 @@ function App() {
 
   return (
     <>
-        <ProductProvider>
+      <ProductProvider>
+        <FilterContextProvider>
           <RouterProvider router={router} />
-        </ProductProvider>
+        </FilterContextProvider>
+      </ProductProvider>
     </>
   );
 }
