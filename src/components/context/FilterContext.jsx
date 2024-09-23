@@ -1,18 +1,26 @@
-/* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/prop-types */
-import { createContext, useContext } from "react";
-// Import the correct context object, not the provider
+import { createContext, useContext, useEffect, useReducer } from "react";
 import { ProductContext } from "./ProductContext";
+import FilterReducer from "../reducer/FilterReducer";
 
 const FilterContext = createContext();
 
+const initialState = {
+  filteredProducts: [],
+  allProducts: [],
+};
+
 export const FilterContextProvider = ({ children }) => {
-  // Access the product from ProductContext
   const { products } = useContext(ProductContext);
-  console.log(products);
+
+  const [state, dispatch] = useReducer(FilterReducer, initialState);
+
+  useEffect(() => {
+    dispatch({ type: "loadFilterProducts", payload: products });
+  }, [products]);
 
   return (
-    <FilterContext.Provider value={{ products }}>
+    <FilterContext.Provider value={{ ...state }}>
       {children}
     </FilterContext.Provider>
   );
