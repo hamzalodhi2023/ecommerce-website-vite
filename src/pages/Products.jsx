@@ -5,13 +5,12 @@ import Sort from "../components/Sort";
 
 function Products() {
   const { filteredProducts } = useFilterContext();
-  console.log(filteredProducts);
   return (
     <div className="mb-20 grid min-h-screen w-full grid-cols-[25%_75%]">
       <ProductFilter />
-      <div className="grid grid-rows-[60px] bg-zinc-500">
+      <div className="grid grid-rows-[60px]">
         <Sort />
-        <ProductList />
+        <ProductList item={filteredProducts} />
       </div>
     </div>
   );
