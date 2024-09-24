@@ -9,7 +9,7 @@ function ProductCard({ item }) {
           boxShadow:
             "rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px",
         }}
-        className="product relative h-[350px] w-[250px] overflow-hidden rounded-2xl"
+        className="product relative h-[250px] w-[300px] overflow-hidden rounded-2xl"
         key={item.id}
       >
         <img src={item.image} alt="" className="h-[85%] w-full object-cover" />
