@@ -1,14 +1,16 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useContext, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { ProductContext } from "../components/context/ProductContext";
 import SingleProductImage from "../components/SingleProductImage";
 import Stars from "../components/Stars";
 import AddToCart from "../components/AddToCart";
+import { FaLongArrowAltLeft } from "react-icons/fa";
 
 const API = "http://localhost:3000/api/products";
 
 function SingleProduct() {
+  const navigate = useNavigate();
   // Getting data from ProductContext with the help of useContext
   const { getSingleProduct, isSingleLoading, singleProduct } =
     useContext(ProductContext);
@@ -43,6 +45,19 @@ function SingleProduct() {
 
   return (
     <div className="container mx-auto p-4 pb-32 dark:bg-zinc-900 dark:text-white">
+      <div className="mb-5 flex items-center justify-start gap-4">
+        <span
+          onClick={() => {
+            navigate(-1);
+          }}
+          className="flex items-center justify-center gap-5"
+        >
+          <FaLongArrowAltLeft className="text-xl" />
+          <p className="cursor-pointer border-b-2 border-black dark:border-white">
+            Go Back
+          </p>
+        </span>
+      </div>
       <div className="flex flex-col md:flex-row">
         <SingleProductImage images={image} />
         <div className="p-4 md:w-1/2">
