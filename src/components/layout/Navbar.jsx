@@ -33,7 +33,7 @@ function Navbar() {
         </NavLink>
       </div>
       <IoIosMenu
-        className="text-5xl text-black md:hidden dark:text-white"
+        className="text-5xl text-black dark:text-white md:hidden"
         onClick={() => setClose(true)}
       />
       <div
@@ -45,7 +45,7 @@ function Navbar() {
           }}
           className="absolute right-5 top-5 text-3xl text-red-600 md:hidden"
         />
-        <ul className="flex h-full w-full flex-col items-center justify-evenly md:flex-row dark:text-white dark:bg-zinc-800">
+        <ul className="flex h-full w-full flex-col items-center justify-evenly dark:bg-zinc-800 dark:text-white md:flex-row">
           <li className="o-h">
             <NavLink
               onClick={() => {
@@ -96,6 +96,7 @@ function Navbar() {
                 setClose(false);
               }}
               to="/login"
+              className="after:hidden"
             >
               <Button data={"LOGIN"} />
             </NavLink>
@@ -106,6 +107,7 @@ function Navbar() {
                 setClose(false);
               }}
               to="/cart"
+              className="after:hidden"
             >
               <CiShoppingCart className="text-3xl" />
               <span className="absolute right-0 top-0 flex h-[20px] w-[20px] items-center justify-center rounded-full bg-[#717ed9] text-[10px] text-white">

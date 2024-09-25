@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { ProductContext } from "./context/ProductContext";
 import { BounceLoader } from "react-spinners";
-import ProductCard from "./layout/ui/ProductCard";
+import ProductCardGrid from "./layout/ui/ProductCardGrid";
 
 function FeatureProducts() {
   const { isLoading, featureProducts } = useContext(ProductContext);
@@ -27,7 +27,7 @@ function FeatureProducts() {
       </div>
       <div className="card-main-div flex h-full w-full flex-col items-center justify-center gap-4 lg:flex-row lg:justify-evenly">
         {featureProducts.map((item) => {
-          return <ProductCard item={item} key={item.id} />;
+          return <ProductCardGrid item={item} key={item.id} />;
         })}
       </div>
     </div>

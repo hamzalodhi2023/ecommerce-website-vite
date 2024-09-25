@@ -1,11 +1,19 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import ProductCard from "./layout/ui/ProductCard";
 
-function ProductList({ item }) {
+import ProductCardGrid from "./layout/ui/ProductCardGrid";
+import ProductCardList from "./layout/ui/ProductCardList";
+function ProductList({ item, layout, setLayout }) {
   return (
-    <div className="grid w-full grid-cols-1 place-items-center gap-5 bg-white py-10 dark:bg-zinc-900 md:grid-cols-2 lg:grid-cols-3">
+    <div
+      className={`${layout === "List" ? "grid-cols-1" : "grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-3"} grid w-full gap-5 bg-white py-10 dark:bg-zinc-900`}
+    >
       {item.map((current) => {
-        return <ProductCard item={current} key={current.id} />;
+        return layout === "Grid" ? (
+          <ProductCardGrid item={current} key={current.id} />
+        ) : (
+          <ProductCardList item={current} key={current.id} />
+        );
       })}
     </div>
   );

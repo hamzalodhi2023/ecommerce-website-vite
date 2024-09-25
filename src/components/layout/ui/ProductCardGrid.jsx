@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { NavLink } from "react-router-dom";
 
-function ProductCard({ item }) {
+function ProductCardGrid({ item }) {
   return (
     <NavLink to={`/singleproduct/${item.id}`} key={item.id}>
       <div
@@ -31,4 +31,4 @@ function ProductCard({ item }) {
   );
 }
 
-export default ProductCard;
+export default ProductCardGrid;
