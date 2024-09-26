@@ -126,7 +126,7 @@ function Navbar() {
             }}
           >
             {theme === false ? (
-              <FaSun className="cursor-pointer text-xl" />
+              <FaSun className="cursor-pointer text-xl text-[#6354e9]" />
             ) : (
               <IoMoonSharp
                 className="cursor-pointer text-xl text-[#5471c7]"
