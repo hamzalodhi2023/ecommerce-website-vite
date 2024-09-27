@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 
 import { useFilterContext } from "./context/FilterContext";
