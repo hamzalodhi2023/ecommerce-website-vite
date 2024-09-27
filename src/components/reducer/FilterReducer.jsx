@@ -6,6 +6,17 @@ function FilterReducer(state, action) {
         filteredProducts: [...action.payload],
         allProducts: [...action.payload],
       };
+    case "SetGridView":
+      return {
+        ...state,
+        gridView: true,
+      };
+    case "SetListView":
+      return {
+        ...state,
+        gridView: false,
+        listView: true,
+      };
     default:
       return state;
   }

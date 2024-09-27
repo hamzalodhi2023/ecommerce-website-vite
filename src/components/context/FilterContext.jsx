@@ -8,6 +8,8 @@ const FilterContext = createContext();
 const initialState = {
   filteredProducts: [],
   allProducts: [],
+  gridView: true,
+  listView: false,
 };
 
 export const FilterContextProvider = ({ children }) => {
@@ -19,8 +21,15 @@ export const FilterContextProvider = ({ children }) => {
     dispatch({ type: "loadFilterProducts", payload: products });
   }, [products]);
 
+  const setGridView = () => {
+    dispatch({ type: "SetGridView" });
+  };
+  const setListView = () => {
+    dispatch({ type: "SetListView" });
+  };
+
   return (
-    <FilterContext.Provider value={{ ...state }}>
+    <FilterContext.Provider value={{ ...state, setGridView, setListView }}>
       {children}
     </FilterContext.Provider>
   );

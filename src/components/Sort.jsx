@@ -1,17 +1,19 @@
 /* eslint-disable react/prop-types */
 import { IoGrid } from "react-icons/io5";
 import { FaList, FaTimes } from "react-icons/fa";
-function Sort({ setLayout, layout, search, setSearch, item }) {
+import { useFilterContext } from "./context/FilterContext";
+function Sort({ search, setSearch, item }) {
+  const { gridView, setGridView, setListView } = useFilterContext();
   return (
     <div className="flex w-full items-center justify-between border-b border-zinc-300 px-5 py-2 dark:border-zinc-600 dark:bg-zinc-900">
       <div className="flex items-center justify-center gap-2 text-xl text-white dark:text-gray-300 md:gap-5 md:text-2xl">
         <IoGrid
-          className={`${layout === "Grid" ? "bg-[#6354e9] text-white dark:text-white" : "bg-transparent text-gray-500 dark:bg-transparent"} h-8 w-8 cursor-pointer p-2 text-[#6354e9] dark:text-gray-300 md:h-10 md:w-10`}
-          onClick={() => setLayout("Grid")}
+          className={`${gridView === true ? "bg-[#6354e9] text-white dark:text-white" : "bg-transparent text-gray-500 dark:bg-transparent"} h-8 w-8 cursor-pointer p-2 text-[#6354e9] dark:text-gray-300 md:h-10 md:w-10`}
+          onClick={setGridView}
         />
         <FaList
-          className={`${layout === "List" ? "bg-[#6354e9] text-white dark:text-white" : "bg-transparent text-gray-500 dark:bg-transparent"} h-8 w-8 cursor-pointer p-2 text-[#6354e9] dark:text-gray-300 md:h-10 md:w-10`}
-          onClick={() => setLayout("List")}
+          className={`${gridView === false ? "bg-[#6354e9] text-white dark:text-white" : "bg-transparent text-gray-500 dark:bg-transparent"} h-8 w-8 cursor-pointer p-2 text-[#6354e9] dark:text-gray-300 md:h-10 md:w-10`}
+          onClick={setListView}
         />
       </div>
       <span className="mx-5 hidden text-xs text-gray-500 dark:text-gray-400 sm:block md:text-sm">{`${item.length} Total Products`}</span>
